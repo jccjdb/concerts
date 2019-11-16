@@ -1,1 +1,8 @@
-<h1>Music Lovers Only!</h1>
+<% @bands.each do |band| %>
+  <div>
+    <h1><%= band.name %></h1><br />
+    <p><%= band.description %></p><br />
+  </div>
+
+  <hr />
+<% end %>
